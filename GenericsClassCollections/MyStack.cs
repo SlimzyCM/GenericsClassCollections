@@ -84,7 +84,9 @@ namespace GenericsClassCollections
         }
         //IEnumerable
         public object Current => _stackList[_position];
-
+        
+        
+        //return size of list
         public int Size()
         {
             return _stackList.Count;
