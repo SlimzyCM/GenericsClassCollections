@@ -7,6 +7,7 @@ namespace GenericsClassCollections
 {
     internal class MyStack<T> :  IEnumerator,IEnumerable
     {
+        //variable for the IEnumerable
         private int _position = -1;
 
         // List to hold the class item
@@ -18,7 +19,7 @@ namespace GenericsClassCollections
             return _stackList.Count == 0;
         }
 
-        //
+        //output to the console
         public void Print()
         {
             foreach (var item in _stackList)

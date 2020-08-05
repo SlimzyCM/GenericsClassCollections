@@ -21,7 +21,7 @@ namespace GenericsClassCollections
             _queueList.Add(item);
         }
 
-        //
+        //remove from the list the first element
         public T Dequeue()
         {
             var remove = _queueList[0];
@@ -30,7 +30,7 @@ namespace GenericsClassCollections
 
         }
 
-
+        //print the items in the list to the console
         public void Print()
         {
             foreach (var item in _queueList)
@@ -39,6 +39,7 @@ namespace GenericsClassCollections
             }
         }
 
+        //return the count of item in the list
         public int Size()
         {
             return _queueList.Count;
